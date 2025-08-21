@@ -1,0 +1,83 @@
+/* CreatePlayList.css */
+
+.create-playlist-container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.create-playlist-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 26px;
+  color: #333;
+}
+
+.create-playlist-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.create-playlist-form label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  color: #444;
+  font-size: 15px;
+}
+
+.create-playlist-form input[type="text"],
+.create-playlist-form textarea,
+.create-playlist-form input[type="file"] {
+  margin-top: 6px;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 15px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.create-playlist-form input[type="text"]:focus,
+.create-playlist-form textarea:focus {
+  border-color: #007bff;
+  box-shadow: 0px 0px 6px rgba(0, 123, 255, 0.4);
+  outline: none;
+}
+
+.create-playlist-form textarea {
+  resize: none;
+}
+
+.create-playlist-form input[type="file"] {
+  border: none;
+  background: #f8f9fa;
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.create-playlist-form button {
+  padding: 12px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.create-playlist-form button:hover {
+  background: #0056b3;
+  transform: translateY(-2px);
+}
+
+.create-playlist-form button:active {
+  transform: scale(0.97);
+}

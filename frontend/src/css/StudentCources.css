@@ -1,0 +1,141 @@
+/* StudentCources.css */
+
+/* Overall layout */
+.home-layout {
+  display: flex;
+  min-height: 100vh;
+  background: #f7f9fc;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Main section */
+.main-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header / Top content */
+.home-content {
+  padding: 20px 40px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.home-content h1 {
+  font-size: 26px;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 5px;
+}
+
+.home-content p {
+  font-size: 15px;
+  color: #555;
+  margin: 0;
+}
+
+/* Playlist wrapper */
+.playlist-wrapper {
+  padding: 30px 40px;
+}
+
+/* Playlist grid */
+.playlist-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+/* Playlist card */
+.playlist-card {
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.playlist-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Upper part (username + thumbnail) */
+.upper-playlist {
+  padding: 15px;
+  text-align: center;
+}
+
+.username {
+  font-size: 16px;
+  font-weight: 600;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.tumbnail-img-display img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+}
+
+/* Lower part */
+.lower-playlist {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.playlist-title { /* FIXED spelling */
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+
+.playlist-description {
+  font-size: 14px;
+  color: #666;
+  flex-grow: 1;
+  min-height: 40px;
+  max-height: 60px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+.playlist-created-by {
+  font-size: 13px;
+  color: #444;
+  margin-top: 5px;
+}
+
+/* Actions */
+.playlist-actions {
+  margin-top: 12px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.view-btn {
+  padding: 8px 14px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background: #007bff;
+  color: white;
+  transition: transform 0.2s ease, opacity 0.2s ease, background 0.2s ease;
+}
+
+.view-btn:hover {
+  transform: translateY(-2px);
+  opacity: 0.95;
+  background: #0056b3; /* darker hover */
+}

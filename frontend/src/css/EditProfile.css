@@ -1,0 +1,91 @@
+/* EditProfile.css */
+
+.editProfile-container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.editProfile-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 26px;
+  font-weight: 600;
+  color: #333;
+}
+
+.editProfile-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.editProfile-container label {
+  font-size: 15px;
+  font-weight: 500;
+  color: #444;
+  margin-bottom: 6px;
+}
+
+.editProfile-container input[type="email"],
+.editProfile-container input[type="password"],
+.editProfile-container input[type="file"] {
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 15px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.editProfile-container input[type="email"]:focus,
+.editProfile-container input[type="password"]:focus {
+  border-color: #007bff;
+  box-shadow: 0px 0px 6px rgba(0, 123, 255, 0.4);
+  outline: none;
+}
+
+.editProfile-container input[type="file"] {
+  border: none;
+  background: #f8f9fa;
+  cursor: pointer;
+}
+
+.editProfile-container img {
+  display: block;
+  margin-top: 8px;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 2px solid #ddd;
+  transition: transform 0.3s ease;
+}
+
+.editProfile-container img:hover {
+  transform: scale(1.05);
+}
+
+.editProfile-container button {
+  padding: 12px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.editProfile-container button:hover {
+  background: #0056b3;
+  transform: translateY(-2px);
+}
+
+.editProfile-container button:active {
+  transform: scale(0.97);
+}

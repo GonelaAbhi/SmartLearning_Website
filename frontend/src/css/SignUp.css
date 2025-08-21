@@ -1,0 +1,166 @@
+/* =============================
+   SignUp Page - SmartLearning
+   ============================= */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", "Segoe UI", Roboto, Arial, sans-serif;
+  background: linear-gradient(135deg, #6dd5ed, #6c63ff);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container */
+.signup-container {
+  background: #ffffff;
+  padding: 45px 35px;
+  border-radius: 18px;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 420px;
+  text-align: center;
+  animation: fadeIn 0.7s ease-in-out;
+  position: relative;
+}
+
+/* Heading */
+.signup-container h2 {
+  margin-bottom: 25px;
+  font-size: 28px;
+  color: #4b3df7;   /* Bright blue-violet */
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* Role buttons */
+.role-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+  gap: 14px;
+}
+
+.role-buttons button {
+  flex: 1;
+  padding: 12px;
+  border: 1.5px solid #6c63ff;
+  border-radius: 10px;
+  background: #f4f7ff;
+  color: #6c63ff;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.role-buttons button:hover {
+  background: #e3e7ff;
+}
+
+.role-buttons .active {
+  background: #6c63ff;
+  color: #fff;
+  box-shadow: 0px 4px 10px rgba(108, 99, 255, 0.3);
+}
+
+/* Inputs */
+.signup-container input[type="text"],
+.signup-container input[type="email"],
+.signup-container input[type="password"],
+.signup-container input[type="file"] {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 12px 0;
+  border: 1.5px solid #ddd;
+  border-radius: 12px;
+  font-size: 15px;
+  transition: all 0.3s ease;
+  background: #fafafa;
+}
+
+.signup-container input:focus {
+  border-color: #36d1dc;
+  background: #fff;
+  outline: none;
+  box-shadow: 0px 0px 8px rgba(108, 99, 255, 0.4);
+}
+
+/* File input */
+.signup-container input[type="file"] {
+  padding: 8px;
+  background: #f9f9f9;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+/* SignUp Button */
+.signup-container button[type="submit"] {
+  width: 100%;
+  padding: 13px;
+  background: linear-gradient(135deg, #36d1dc, #5b86e5);
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+  margin-top: 18px;
+  transition: all 0.3s ease;
+}
+
+.signup-container button[type="submit"]:hover {
+  background: linear-gradient(135deg, #5b86e5, #36d1dc);
+  transform: translateY(-2px);
+  box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.25);
+}
+
+/* Sign-in link */
+.signup-text {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #444;
+}
+
+.signup-text a {
+  color: #6c63ff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.signup-text a:hover {
+  text-decoration: underline;
+  color: #4b3df7;
+}
+
+/* Message (errors or alerts) */
+.signup-container p {
+  margin: 8px 0;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .signup-container {
+    padding: 35px 20px;
+    max-width: 92%;
+  }
+
+  .signup-container h2 {
+    font-size: 22px;
+  }
+
+  .role-buttons {
+    gap: 8px;
+  }
+}

@@ -1,0 +1,121 @@
+/* =============================
+   Login Page - SmartLearning
+   ============================= */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", "Segoe UI", Roboto, Arial, sans-serif;
+  background: linear-gradient(135deg, #6dd5ed, #6c63ff);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container */
+.login-container {
+  background: #ffffff;
+  padding: 45px 35px;
+  border-radius: 18px;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  animation: fadeIn 0.7s ease-in-out;
+  position: relative;
+}
+
+/* Heading */
+.login-container h2 {
+  margin-bottom: 25px;
+  font-size: 28px;
+  color: #4b3df7;   /* Violet-blue heading */
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* Input fields */
+.login-container input {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 12px 0;
+  border: 1.5px solid #ddd;
+  border-radius: 12px;
+  font-size: 15px;
+  transition: all 0.3s ease;
+  background: #fafafa;
+}
+
+.login-container input:focus {
+  border-color: #36d1dc;
+  background: #fff;
+  outline: none;
+  box-shadow: 0px 0px 8px rgba(108, 99, 255, 0.4);
+}
+
+/* Login button */
+.login-container button {
+  width: 100%;
+  padding: 13px;
+  background: linear-gradient(135deg, #36d1dc, #5b86e5);
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+  margin-top: 18px;
+  transition: all 0.3s ease;
+}
+
+.login-container button:hover {
+  background: linear-gradient(135deg, #5b86e5, #36d1dc);
+  transform: translateY(-2px);
+  box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.25);
+}
+
+/* Error / Message */
+.login-container p {
+  margin: 5px 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #d9534f; /* red for error/warning messages */
+}
+
+/* Sign-up text */
+.signup-text {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #555;
+}
+
+.signup-text a {
+  color: #6c63ff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.signup-text a:hover {
+  text-decoration: underline;
+  color: #4b3df7;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .login-container {
+    padding: 35px 20px;
+    max-width: 92%;
+  }
+
+  .login-container h2 {
+    font-size: 22px;
+  }
+}
