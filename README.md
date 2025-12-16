@@ -119,7 +119,7 @@ The application will run at:
 
 Frontend: http://localhost:3000
 
-Backend: http://localhost:5000
+Backend: http://localhost:3001
 
 
 
@@ -129,5 +129,5 @@ Backend: http://localhost:5000
 
 Create a .env file inside the server directory:
 
-PORT=5000
+PORT=3001
 MONGO_URI=your_mongodb_connection_string
